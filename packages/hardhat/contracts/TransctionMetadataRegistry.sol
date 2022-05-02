@@ -60,10 +60,10 @@ contract TransctionMetadataRegistry is Ownable, Delegatable {
   
   /**
     ---------------------------------------------
-    | Contract     	| Method Signature => IPFS 	|
-    |--------------	|--------------------------	|
-    | 0x000...0000 	| 0x11223344 => ipfs://    	|
-    | 0x000...0000 	| 0x11223344 => ipfs://    	|
+    | Zone        	| Contract     	| Method Signature => IPFS 	|
+    |-------------	|--------------	|--------------------------	|
+    | 0x111...111 	| 0x000...0000 	| 0x11223344 => ipfs://    	|
+    | 0x111...111 	| 0x000...0000 	| 0x11223344 => ipfs://    	|
     ---------------------------------------------
   */
   mapping(bytes32 => mapping(address => mapping(bytes4 => string))) metadata;
